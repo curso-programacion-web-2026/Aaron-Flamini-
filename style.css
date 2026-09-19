@@ -1,0 +1,36 @@
+/* estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c76c18;
+    margin: 0;
+    padding: 0;
+}
+
+/* titulos */
+h1 {
+    font-size: 2em;
+    color: #f31010;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #550505;
+}
+
+h3 {
+    font-size: 1.17em;
+    color: #830c0c;
+}
+
+/* contenido principal */
+p {
+    font-size: 1em;
+    color: #165f20;
+}
+
+/* pie de pagina */
+footer {
+    font-size: 0.8em;
+    color: #999;
+}
