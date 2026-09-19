@@ -6,29 +6,69 @@ body {
     margin: 0;
     padding: 0;
 }
+#Espadas-rectas {
+    background-color: #b83e1f;
+    padding: 30px;
+    border: 2px solid #5e0e0e;
+    margin: 20px;
+}
 
 /* titulos */
 h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2em;
+    text-align: center;
     color: #f31010;
 }
 
 h2 {
+    font-family: 'Times New Roman', Times, serif;
     font-size: 1.5em;
     color: #550505;
 }
 
 h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.17em;
     color: #830c0c;
+}
+
+/*imagenes*/
+img {
+    width: 50%;
+    height: auto;
 }
 
 /* contenido principal */
 p {
     font-size: 1em;
     color: #165f20;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
 }
-
+.espadones-y-ultraespadones {
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #3c29eb;
+}
+.espadas-rectas {
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #0e0650;
+}
+.espadas-curvas {
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #120774;
+}
+#historia {
+    background-color: #941f1f;
+    color: #90c21a;
+}
+#armas-y-armaduras {
+    background-color: #941f1f;
+    color: #17a2a7;
+}
 /* pie de pagina */
 footer {
     font-size: 0.8em;
