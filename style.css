@@ -39,6 +39,26 @@ img {
     height: auto;
 }
 
+/*cartas*/
+.primera-carta {
+    background-color: #17a2a7;
+    border-radius: 60px;
+    border: 2px solid #120774;
+    padding: 20px;
+    margin: 10px;
+    width: auto;
+}
+
+.carta {
+    display: inline-block;
+    background-color: #999;
+    border: 2px solid #120774;
+    border-radius: 30px;
+    padding: 10px;
+    margin: auto;
+    width: auto;
+}
+
 /* contenido principal */
 p {
     font-size: 1em;
