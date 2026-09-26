@@ -31,7 +31,7 @@ for (let i = 1; i < 10; i++) {
     console.log(i);
 }
 
-const botonesVerMas = document.querySelectorAll(".ver-mas");
+const botonesVerMas = document.querySelectorAll('ver-mas');
 
 function alternarInformacion(event) {
 
@@ -39,80 +39,13 @@ function alternarInformacion(event) {
 
     const extraInfo = boton.nextElementSibling;
 
-    extraInfo.classList.toggle("oculto");
-    if (extraInfo.classList.contains("oculto")) {
-        boton.textContent = "Ver más";
+    extraInfo.classList.toggle('oculto'); }
+if (extraInfo.classList.contains('oculto')) {
+        boton.textContent = 'Ver más';
     } else {
-        boton.textContent = "Ver menos";
-    }
-} 
-    botonesVerMas.forEach(function(boton) {
-        boton.addEventListener("click", alternarInformacion);
-    
-    });
+        boton.textContent = 'Ver menos';
+    }   
 
-    const botonCambiar = document.getElementById("cambiarboton");
-
-    const titulo = document.getElementById("titulo");
-
-    let contador = 0;
-
-    botonCambiar.addEventListener("click", function() {
-        contador++;
-        if (contador === 1) {
-            titulo.textContent = "¡Bienvenidos a mi página!";
-            botonCambiar.textContent = "Cambiar a Dark Souls 2";
-        } else if (contador === 2) {
-            titulo.textContent = "¡Bienvenidos a mi página de Dark Souls 2!";
-            botonCambiar.textContent = "Cambiar a Dark Souls 3";
-        } else if (contador === 3) {
-            titulo.textContent = "¡Bienvenidos a mi página de Dark Souls 3!";
-            botonCambiar.textContent = "Restablecer";
-        } else {
-            contador = 0;
-            titulo.textContent = "¡Bienvenidos a mi página!";
-            botonCambiar.textContent = "Cambiar a Dark Souls 2";
-        }
-    });
-
-    const aumentar = document.getElementById("aumentar");
-    const normal = document.getElementById("normal");
-    const disminuir = document.getElementById("disminuir");
-    const texto = document.getElementById("texto");
-    let tamaño = 16;
-
-    aumentar.addEventListener("click", function() {
-        if (tamaño < 30) {
-            tamaño = tamaño + 2;
-        texto.style.fontSize = tamaño + "px";
-        }
-    });
-
-    normal.addEventListener("click", function() {
-        if (tamaño === 16) {
-            texto.style.fontSize = tamaño + "px";
-        }
-    });
-
-    disminuir.addEventListener("click", function() {
-        if (tamaño > 10) {
-            tamaño = tamaño - 2;
-        texto.style.fontSize = tamaño + "px";
-        }
-    });
-
-    const botonCambiarColor = document.getElementById("volver-arriba");
-    window.addEventListener("scroll", function() {
-        if (window.scrollY > 300) {
-            boton.style.display = "block";
-        } else {
-            boton.style.display = "none";
-        }
-    });
-
-    boton.addEventListener("click", function() {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
+    botonesVerMas.forEach(function(boton){ 
+        boton.addEventListener('click', alternarInformacion);
     });

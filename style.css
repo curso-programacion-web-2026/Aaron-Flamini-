@@ -12,16 +12,12 @@ body {
     border: 2px solid #5e0e0e;
     margin: 20px;
 }
-#volver-arriba {
-   display: none;
-   position: fixed;
-   bottom: 20px;
-   right: 20px;
-   padding: 12px 16px;
-   border: none;
-   border-radius: 8px;
-   cursor: pointer;
-   font-size: 16px;
+.menu {
+    display: inline;
+    background-color: #e7ecf1;
+    padding: 10px;
+    border: 1px solid #e8ecf0;
+    border-radius: 5px;
 }
 
 /* titulos */
