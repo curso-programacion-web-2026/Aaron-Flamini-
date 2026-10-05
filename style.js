@@ -3,11 +3,11 @@ console.log("hola mundo");
 
 let nombre ="aaron";
 
-let edad=18;
+let edad=24;
 
-console.log(aaron)
+console.log(nombre);
 
-console.log( 24 )
+console.log(edad);
 
 let numero1=10
 
@@ -22,10 +22,10 @@ console.log(numero1*numero2);
 console.log(numero1/numero2);
 
 function saludar() {
-    console.log("ola"):
+    console.log("ola");
 }
 
-let edad=18;
+let edad = 18;
 
 if (edad>=18) {
     console.log("sos mayor de edad");
