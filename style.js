@@ -3,7 +3,7 @@ console.log("hola mundo");
 
 let nombre ="aaron";
 
-let edad=24;
+let edad = 24;
 
 console.log(nombre);
 
@@ -21,15 +21,43 @@ console.log(numero1*numero2);
 
 console.log(numero1/numero2);
 
-function saludar() {
+saludar(); {
     console.log("ola");
 }
 
-let edad = 18;
+edad = 18;
 
 if (edad>=18) {
     console.log("sos mayor de edad");
 }else{
     console.log("sos menor de edad");
 }
+
+for (let i=1;i<=5;i++){
+    console.log(i)
+}
+
+/*Botones de extencion: ver mas*/
+
+const botonesVerMas = document.querySelectorAll('.btn-ver-mas');
+
+function alternarInformacion(event) {
+
+    const boton = event.currentTarget;
+
+    const infoExtra = boton.previousElementSibling;
+
+    infoExtra.classList.toggle('oculto');
+
+    if (infoExtra.classList.contains('oculto')) {
+        boton.textContent = '[ ver mas ]';
+    } else {
+        boton.textContent = '[ ver menos ]';
+    }
+}
+
+botonesVerMas.forEach(function(boton) {
+    boton.addEventListener('click', alternarInformacion);
+}); 
+
 

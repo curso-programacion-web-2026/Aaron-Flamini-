@@ -1,6 +1,11 @@
 /* estilos generales */
 
 body {
+    background-image: url(https://www.nuevatribuna.es/asset/thumbnail,992,558,center,center/media/nuevatribuna/images/2025/06/05/2025060510520349459.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center;
+    background-attachment: fixed;
     font-family: Arial, sans-serif;
     background-color: #c76c18;
     margin: 0;
@@ -13,11 +18,22 @@ body {
     margin: 20px;
 }
 .menu {
-    display: inline;
-    background-color: #e7ecf1;
+    display: block;
+    background-color: #58300a;
     padding: 10px;
-    border: 1px solid #e8ecf0;
+    border: 1px solid #58300a;
     border-radius: 5px;
+}
+.navegacion {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #d87422;
+    padding: 15px 30px;
+}
+.navegacion:hover {
+    color: #830c0c;
+    text-decoration: underline;
 }
 .portada {
 background-image: url(https://www.nintenderos.com/wp-content/uploads/2018/03/dark-souls-1.jpg); 
@@ -106,6 +122,7 @@ img {
     width: auto;
 }
 
+
 /* contenido principal */
 p {
     font-size: 1em;
@@ -136,8 +153,15 @@ p {
     background-color: #941f1f;
     color: #17a2a7;
 }
+.oculto {
+    display: none;
+}
 /* pie de pagina */
 footer {
     font-size: 0.8em;
     color: #999;
+}
+.info {
+    background-color: #d87422;
+    padding: 15px 30px;
 }
