@@ -79,13 +79,13 @@ boton.addEventListener("click",function () {
 
 });
 
-const texto = document.querySelectorAll(".Dark-souls-1");
+const texto = document.querySelectorAll("#Dark-souls-1");
 
-const disminuir = document.querySelectorAll(".disminuir");
+const disminuir = document.querySelectorAll("#disminuir");
 
-const normal = document.querySelectorAll(".normal");
+const normal = document.querySelectorAll("#normal");
 
-const aumentar = document.querySelectorAll(".aumentar");
+const aumentar = document.querySelectorAll("#aumentar");
 
 let tamaño = 16;
 
@@ -105,7 +105,7 @@ texto.style.fontSize = tamaño + "px";
 
 });
 
-boton = document.querySelectorAll(".volverarriba");
+boton = document.querySelectorAll("#volverarriba");
 window.addEventListener("scroll",function(){
 
     if (this.window.scrollY > 300){
