@@ -1,5 +1,5 @@
-/* estilos generales */
 
+/* cuerpo */
 body {
     background-image: url(https://www.nuevatribuna.es/asset/thumbnail,992,558,center,center/media/nuevatribuna/images/2025/06/05/2025060510520349459.jpg);
     background-repeat: no-repeat;
@@ -11,6 +11,36 @@ body {
     margin: 0;
     padding: 0;
 }
+/* Modo oscuro */
+:root {
+    --bg-color: #f5efe6;
+    --text-color: #333333;
+    --card-bg: #ffffff;
+    --article-bg: #fff8e1;
+    --button-bg: #2196f3;
+    --button-text: #ffffff;
+    --header-bg: #5d4037;
+    --title-color: #6d4c41;
+}
+body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --card-bg: #1e1e1e;
+    --article-bg: #2a2a2a;
+    --button-bg: #bb86fc;
+    --button-text: #000000;
+    --header-bg: #1f1f1f;
+    --title-color: #bb86fc;
+}
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 2rem;    
+}
+
+/* estilos generales */
 #Espadas-rectas {
     background-color: #b83e1f;
     padding: 30px;
@@ -126,24 +156,24 @@ img {
 /* contenido principal */
 p {
     font-size: 1em;
-    color: #165f20;
+    color: #dde2de;
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
 }
 .espadones-y-ultraespadones {
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #3c29eb;
+    color: #958af1;
 }
 .espadas-rectas {
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #0e0650;
+    color: #6251f8;
 }
 .espadas-curvas {
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #120774;
+    color: #766fb6;
 }
 #historia {
     background-color: #941f1f;
@@ -155,6 +185,12 @@ p {
 }
 .oculto {
     display: none;
+}
+.clases-armas {
+    background-color: #e4871e;
+    padding: 30px;
+    border: 2px solid #5e0e0e;
+    margin: 20px;
 }
 
 /* botones */
@@ -271,6 +307,7 @@ background-color: #000;
   padding: 5px;
   padding: 5px;
   margin-top: 10px;
+  background-color: #999;
 }
 
 

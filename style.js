@@ -191,3 +191,19 @@ formulario.addEventListener("submit", function(event) {
  }
 
 });
+
+/* Modo oscuro */
+
+const toggleBtn = document.getElementById('theme-toggle');
+toggleBtn.addEventListener("click",function(){ 
+document.body.classList.toggle("darkMode");
+});
+
+toggleBtn.addEventListener("click",function(){ 
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+    botonTema.textContent = "Cambiar a Modo Claro";
+} else {botonTema.textContent = "Cambiar a Modo Oscuro";}
+
+});
