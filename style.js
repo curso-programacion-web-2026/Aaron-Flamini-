@@ -204,16 +204,14 @@ formulario.addEventListener("submit", function(event) {
 
 /* Modo oscuro */
 
-const toggleBtn = document.getElementById('theme-toggle');
-toggleBtn.addEventListener("click",function(){ 
-document.body.classList.toggle("darkMode");
-});
+const toggleBtn = document.getElementById('theme-toggle'); 
 
 toggleBtn.addEventListener("click",function(){ 
-document.body.classList.toggle("dark");
+document.body.classList.toggle("dark-mode");
 
-if(document.body.classList.contains("dark")){
-    botonTema.textContent = "Cambiar a Modo Claro";
-} else {botonTema.textContent = "Cambiar a Modo Oscuro";}
-
+if(document.body.classList.contains("dark-mode")){
+    toggleBtn.textContent = "Cambiar a Modo Claro";
+} else {
+    toggleBtn.textContent = "Cambiar a Modo Oscuro";
+}
 });

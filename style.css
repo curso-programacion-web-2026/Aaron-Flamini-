@@ -1,43 +1,40 @@
 
 /* cuerpo */
 body {
-    background-image: url(https://www.nuevatribuna.es/asset/thumbnail,992,558,center,center/media/nuevatribuna/images/2025/06/05/2025060510520349459.jpg);
+    background-image: var(--portada-bg);
+    background-color: var(--bg-color);
+    color: var(--text-color); 
+    transition: background-color 0.3s ease, background-image 0.5s ease;
     background-repeat: no-repeat;
     background-size: cover ;
     background-position: center;
     background-attachment: fixed;
     font-family: Arial, sans-serif;
-    background-color: #c76c18;
     margin: 0;
     padding: 0;
 }
 /* Modo oscuro */
 :root {
-    --bg-color: #f5efe6;
-    --text-color: #333333;
+     --bg-color: #f5efe6;
+    --text-color: #e0e0e0;
     --card-bg: #ffffff;
     --article-bg: #fff8e1;
     --button-bg: #2196f3;
     --button-text: #ffffff;
     --header-bg: #5d4037;
     --title-color: #6d4c41;
+    --portada-bg: url(https://frikadasmil.wordpress.com/wp-content/uploads/2012/11/darksouls8_thumb.jpg)
 }
 body.dark-mode {
-    --bg-color: #121212;
-    --text-color: #e0e0e0;
+   --bg-color: #121212;
+    --text-color: #000000;
     --card-bg: #1e1e1e;
     --article-bg: #2a2a2a;
     --button-bg: #bb86fc;
     --button-text: #000000;
     --header-bg: #1f1f1f;
     --title-color: #bb86fc;
-}
-body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-family: Arial, Helvetica, sans-serif;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    padding: 2rem;    
+    --portada-bg: url(https://cdnb.artstation.com/p/assets/images/images/036/365/359/large/nuno-goncalves-anor-londo-001.jpg?1617472366)
 }
 
 /* estilos generales */
@@ -66,7 +63,7 @@ body {
     text-decoration: underline;
 }
 .portada {
-background-image: url(https://www.nintenderos.com/wp-content/uploads/2018/03/dark-souls-1.jpg); 
+background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNBw7n5G1JEOUMjj3gcKF3gVGY9Lti3MwR93tTdr2OWQ&s=10); 
 background-attachment: fixed;
 background-size: cover;
 background-position: center;
@@ -123,7 +120,7 @@ h2 {
 h3 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.17em;
-    color: #830c0c;
+    color: #bae208;
 }
 
 /*imagenes*/
@@ -156,7 +153,7 @@ img {
 /* contenido principal */
 p {
     font-size: 1em;
-    color: #f0d5bb;
+    color: #f80116;
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
 }
