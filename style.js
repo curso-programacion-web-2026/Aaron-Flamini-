@@ -60,13 +60,14 @@ botonesVerMas.forEach(function(boton) {
 
 /* Botones de extencion: cambiar caracteristica */
 
-const boton = document.querySelectorAll(".botoncambiar");
+const boton = document.querySelector("#botoncambiar");
 
-const titulo = document.querySelectorAll("#subtitulo");
+const titulo = document.querySelector("#subtitulo");
 
 let contador = 0;
 
-boton.addEventListener("click",function () {
+if (boton && titulo) {
+boton.addEventListener("click",function() {
     contador++;
 
     if (contador===1){
@@ -75,20 +76,22 @@ boton.addEventListener("click",function () {
        titulo.textContent = "¡Espero que disfrutes mi pagina!";
     } else if (contador===3){
         titulo.textContent = "¡Gracias por visitar!"
+        contador = 0;
     }
+ });
+}
 
-});
+const texto = document.querySelector("#Dark-Souls-1");
 
-const texto = document.querySelectorAll("#Dark-souls-1");
+const disminuir = document.querySelector("#disminuir");
 
-const disminuir = document.querySelectorAll("#disminuir");
+const normal = document.querySelector("#normal");
 
-const normal = document.querySelectorAll("#normal");
-
-const aumentar = document.querySelectorAll("#aumentar");
+const aumentar = document.querySelector("#aumentar");
 
 let tamaño = 16;
 
+if (texto && aumentar && disminuir && normal) { 
 aumentar.addEventListener("click",function() {
     
     if (tamaño < 30){
@@ -98,25 +101,32 @@ aumentar.addEventListener("click",function() {
 
 });
 
-normal.addEventListener("click",function () {
+disminuir.addEventListener("click", function() { 
+    if(tamaño > 10) {
+        tamaño = tamaño - 2;
+        texto.style.fontSize = tamaño +"px";
+    }
+  });
 
+normal.addEventListener("click",function() {
 tamaño = 16;
 texto.style.fontSize = tamaño + "px";
-
 });
+}
 
-boton = document.querySelectorAll("#volverarriba");
+const botonArriba = document.querySelector("#volverarriba");
+
+if (botonArriba) { 
 window.addEventListener("scroll",function(){
-
     if (this.window.scrollY > 300){
-        boton.style.display = "block";
+        botonArriba.style.display = "block";
     } else {
-        boton.style.display = "none";
+        botonArriba.style.display = "none";
     }
+  });
+ }
 
-});
-
-boton.addEventListener("click",function () {
+botonArriba.addEventListener("click",function () {
 window.scrollTo({
 top: 0,
 behavior: "smooth"
@@ -130,9 +140,9 @@ const slides = document.querySelectorAll('.slide');
 
 const dots = document.querySelectorAll('.dot');
 
-const prevbtn = document.getElementById('prevbtn');
+const prevBtn = document.getElementById('prevBtn');
 
-const nextbtn = document.getElementById('nextbtn');
+const nextBtn = document.getElementById('nextBtn');
 
 const carouselcontaines = document.getElementById('carousel')
 
@@ -164,8 +174,8 @@ function prevSlide() {
     showSlide(currentSlide - 1);
 }
 
-if (nextbtn) nextbtn.addEventListener('click', nextSlide);
-if (prevbtn) prevbtn.addEventListener('click', prevSlide);
+if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+if (prevBtn) prevBtn.addEventListener('click', prevSlide);
  
 /* Formulario */
 
