@@ -166,3 +166,28 @@ function prevSlide() {
 
 if (nextbtn) nextbtn.addEventListener('click', nextSlide);
 if (prevbtn) prevbtn.addEventListener('click', prevSlide);
+ 
+/* Formulario */
+
+const formulario = document.getElementById("formulario");
+
+formulario.addEventListener("submit", function(event) {
+
+     event.preventDefault();
+
+     const nombre = document.getElementById("nombre").value.trim();
+     const email = document.getElementById("email").value.trim();
+     const mensaje = document.getElementById("mensaje").value.trim();
+     const resultado = document.getElementById("resultado");
+
+    if (nombre.length < 3) {
+        Event.preventDefault();
+        resultado.textContent = "El nombre debe tener al menos 3 caracteres.";
+    } else if (mensaje.trim() === "") {
+        resultado.textContent = "El mensaje no puede estar vacio."
+    } else {
+        Event.preventDefault();
+        resultado.textContent = "Formulario enviado correctamente!"
+ }
+
+});
